@@ -1,0 +1,24 @@
+{{>header}} <br>
+{{>navbar}} <br>
+<section class="container my-5">
+    <h3 class="text-primary">Add New User</h3>
+    <div>
+        <h3 class="danger text-danger" style="text-align: center;" >{{error}}</h3>
+    </div>
+    <form action="" method="POST">
+    <div class="mb-3 " >
+        <input type="text" name="name" placeholder="enter name" class="form-control">
+    </div>
+    <div class="mb-3">
+        <input type="number" name="accNum" placeholder="enter accNum" class="form-control">
+    </div>
+    <div class="mb-3">
+        <input type="number" name="balance" placeholder="enter balance" class="form-control">
+    </div>
+    <div class="mb-3">
+        <input type="submit" name="add" value="Add"placeholder="enter name" class="btn btn-success">
+    </div>
+</form>
+</section>
+
+{{>footer}} <br>

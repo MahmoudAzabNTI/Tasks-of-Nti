@@ -1,0 +1,41 @@
+{{>header}} <br>
+{{>navbar}} <br>
+<section class="container my-5">
+    <div class="my-3">
+        <a href="/add" class="btn btn-success">Add</a>
+    </div>
+    <table class="table table-stripped">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>accNum</th>
+                <th>balance</th>
+                <th>status</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#if isEmpty}}
+            <tr>
+                <td colspan="5" class="alert alert-danger">No Data to show</td>
+            </tr>
+            {{/if}}
+            {{#each allTrue}}
+            <tr>
+                <td>{{this.id}}</td>
+                <td>{{this.name}}</td>
+                <td>{{this.accNum}}</td>
+                <td>{{this.balance}}</td>
+                <td>{{this.status}}</td>
+                <td>
+                    <a href="/deposit/{{this.id}}" class="btn btn-warning mx-3">Depost</a>
+                    <a href="/pull/{{this.id}}" class="btn btn-danger mx-3">Pull</a>
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</section>
+{{>footer}} <br>
+

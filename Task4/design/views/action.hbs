@@ -1,0 +1,31 @@
+{{>header}} <br>
+{{>navbar}} <br>
+<section class="container my-5">
+    <h3 class="text-primary">Action This User</h3>
+    <form action="" method="POST">
+        
+    <div class="mb-3">
+        <input type="hidden" name="id" placeholder="enter name" class="form-control" value="{{customerData.id}}">
+    </div>
+
+    <div class="mb-3 " >
+        <input type="hidden" name="name" placeholder="enter name" class="form-control" value="{{customerData.name}}">
+    </div>
+    <div class="mb-3">
+        <input type="hidden" name="accNum" placeholder="enter accNum" class="form-control" value="{{customerData.accNum}}">
+    </div>
+    <div class="mb-3">
+        <input type="hidden" name="balance" placeholder="enter balance" class="form-control" value="{{customerData.balance}}">
+    </div>
+    <div class="mb-3">
+        <input type="number" name="value" placeholder="enter value" class="form-control" >
+    </div>
+    </div>
+    <div class="mb-3">
+        <input type="submit"  value="Save" placeholder="enter name" class="btn btn-primary">
+    </div>
+    
+</form>
+</section>
+
+{{>footer}} <br>
