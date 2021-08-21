@@ -1,0 +1,13 @@
+Task => title required , content required, date today date
+users => name, userName, email, password, phone, gender, createAt
+            type: String, required: true, minlength: 3, maxlength: 20, trim: true , unique: true , match: ,
+            validate(value){
+                if(!validator.isEmail(value)) throw new Error(")
+            }
+functions
+    addTask => title, content
+    showAllTasks 
+    showSingleTask => taskId
+    editTask => taskId , onlu duDate can updated
+    deleteTask => taskId
+    
